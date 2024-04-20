@@ -33,7 +33,6 @@ SETTINGS_FRIENDS_LINKS: {
     enable: true,
     json_api: "",
     list: [
-        ["Jonas", "https://blog.laogou717.com/", "https://cdn.jsdelivr.net/gh/JonasTech0/Jonas-imgs-240211/2024-02-11-Webimg/QQ%E9%A2%91%E9%81%93.webp", "atom.xml"],
         ["凌云·LinYun", "https://wuyuhanzijin.github.io/", "https://wuyuhanzijin.github.io/images/avatar.png", "atom.xml"]
     ]
 }
