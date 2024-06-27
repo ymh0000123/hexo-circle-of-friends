@@ -44,15 +44,10 @@ jobs:
       with:
         python-version: 3.8
         
-    - name: upgrade pip
-      working-directory: ./hexo_circle_of_friends
-      run: |
-         pip install --upgrade pip
-
     - name: Install requirements
       working-directory: ./hexo_circle_of_friends
       run: |
-         pip install -r requirements.txt
+         pip3 install --upgrade pip &&pip install -r requirements.txt
 
     - name: set env
       run: |
