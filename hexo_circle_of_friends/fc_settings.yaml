@@ -31,7 +31,7 @@ LINK: [
 #       suffix：选填，自定义订阅后缀，主要针对不规范的网站订阅后缀，见示例2
 SETTINGS_FRIENDS_LINKS: {
     enable: true,
-    json_api: "https://xiaofeishu-blog-api.pages.dev/fcircle/fcircle.json",
+    json_api: "https://xiaofeishu-blog-api.pages.dev/friends/friends.json",
     list: [
         
         ]
