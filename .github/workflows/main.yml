@@ -5,13 +5,13 @@ on:
     branches:
       - main
   schedule:
-    - cron: "0 0,12 * * *"
+    - cron: "0 0,6,12,18,21 * * *"
   workflow_dispatch:
 
 env:
   # 在这里查看需要添加的secert
   # 通用配置
-  SIMPLE_MODE: true # 极简模式是否开启
+  SIMPLE_MODE: false # 极简模式是否开启
   STORAGE_TYPE: ${{ secrets.STORAGE_TYPE }} # 请修改为你的存储方式，默认为leancloud
   PROXY: ${{ secrets.PROXY }} # 可选，http代理
   # leancloud、mysql、sqlite、mongodb配置四选一即可
@@ -42,12 +42,13 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@main
       with:
-        python-version: 3.8
-        
+        python-version: 3.11
+        cache: "pip"
+
     - name: Install requirements
       working-directory: ./hexo_circle_of_friends
       run: |
-         pip3 install --upgrade pip &&pip install -r requirements.txt
+        pip install -r requirements.txt
 
     - name: set env
       run: |
